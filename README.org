@@ -1,4 +1,4 @@
-#+TITLE: README: mdelhey-org-template
+#+TITLE: mdelhey-org-template
 
 To use the template, add a line in your org file pointing to the template:
 

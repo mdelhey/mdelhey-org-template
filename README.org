@@ -1,0 +1,8 @@
+#+TITLE: README: mdelhey-org-template
+
+To use the template, add a line in your org file pointing to the template:
+
+#+BEGIN_SRC
+#+SETUPFILE: /Path/To/template.org
+#+END_SRC
+

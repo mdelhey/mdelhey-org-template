@@ -1,8 +1,8 @@
-#+EMAIL: matt.delhey@gmail.com
-
+#+EMAIL: matt.delhey@mail.utoronto.ca
 #+OPTIONS: toc:nil num:nil tasks:nil h:nil title:t H:3 email:nil d:nil
 
 #+LATEX_CLASS: article
+#+LATEX_CLASS_OPTIONS: [12pt]
 #+LATEX_HEADER: \usepackage[innermargin=1.0in,outermargin=1.0in,vmargin=3cm]{geometry}
 
 #+LATEX_HEADER: \usepackage[T1]{fontenc}
@@ -17,6 +17,16 @@
 
 #+LATEX_HEADER: \usepackage[explicit]{titlesec}
 #+LATEX_HEADER: \newcommand*\Hide{\titleformat{\chapter}[display] {}{}{0pt}{\Huge}\titleformat{\part}{}{}{0pt}{}}
+
+# --- Minimal Title ---
+#+LATEX_HEADER: \makeatletter\renewcommand{\maketitle}{\bgroup\setlength{\parindent}{0pt}\begin{flushleft}\textbf{\@title}\linebreak\textit{\@author}\end{flushleft}\egroup}\makeatother
+
+
+# --- Section Headings ---
+#+LATEX_HEADER: \usepackage{sectsty}
+#+LATEX_HEADER: \sectionfont{\normalsize}
+#+LATEX_HEADER: \subsectionfont{\normalsize}
+#+LATEX_HEADER: \subsubsectionfont{\normalsize}
 
 # Square Bracket Open [
 #+MACRO: BO @@latex:\char91@@ @@html:&#91;@@
@@ -38,6 +48,7 @@
 #+LATEX_HEADER:\let\quoteOld\quote
 #+LATEX_HEADER:\let\endquoteOld\endquote
 #+LATEX_HEADER:\renewenvironment{quote}{\quoteOld\singlespacing}{\endquoteOld}
+
 
 
 

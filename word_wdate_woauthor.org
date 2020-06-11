@@ -1,5 +1,5 @@
-#+EMAIL: matt.delhey@mail.utoronto.ca
-#+OPTIONS: toc:nil num:nil tasks:nil h:nil title:t H:3 email:nil d:nil
+#+EMAIL: nil
+#+OPTIONS: toc:nil num:nil tasks:nil h:nil title:t H:3 email:nil d:nil author:nil 
 
 #+LATEX_CLASS: article
 #+LATEX_CLASS_OPTIONS: [12pt]
@@ -42,7 +42,7 @@
 #+LATEX_HEADER: \usepackage{newtxtext,newtxmath}
 
 # --- Minimal Title ---
-#+LATEX_HEADER: \makeatletter\renewcommand{\maketitle}{\bgroup\setlength{\parindent}{0pt}\begin{flushleft}\textbf{\@title}\linebreak\textit{\@author}\end{flushleft}\egroup\vspace{-2ex}}\makeatother
+#+LATEX_HEADER: \makeatletter\renewcommand{\maketitle}{\bgroup\setlength{\parindent}{0pt}\begin{flushleft}\textbf{\@title}\linebreak{\@date}\end{flushleft}\egroup}\makeatother
 
 # --- Disable Word-Wrap ---
 #+LATEX_HEADER: \usepackage[none]{hyphenat}

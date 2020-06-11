@@ -2,14 +2,16 @@
 #+OPTIONS: toc:nil num:nil tasks:nil h:nil title:t H:3 email:nil d:nil
 
 #+LATEX_CLASS: article
-#+LATEX_CLASS_OPTIONS: [11pt]
-#+LATEX_HEADER: \usepackage[innermargin=1.1in,outermargin=1.1in,vmargin=3cm]{geometry}
+#+LATEX_CLASS_OPTIONS: [landscape,twocolumn,letterpaper,8pt]
+#+LATEX_HEADER: \usepackage[innermargin=.5cm,outermargin=.5cm,vmargin=.5cm]{geometry}
+
+# -textwidth=\paperwidth,textheight=\paperheight,noheadfoot,nomarginpar
 
 #+LATEX_HEADER: \usepackage[T1]{fontenc}
 #+LATEX_HEADER: \usepackage[sc,osf]{mathpazo}
 
 #+LATEX_HEADER: \usepackage{setspace}
-#+LATEX_HEADER: \doublespacing
+#+LATEX_HEADER: \singlespacing
 
 #+LATEX_HEADER: \usepackage{titling}
 #+LATEX_HEADER: \setlength{\droptitle}{-8em} 
@@ -49,6 +51,16 @@
 #+LATEX_HEADER:\let\endquoteOld\endquote
 #+LATEX_HEADER:\renewenvironment{quote}{\quoteOld\singlespacing}{\endquoteOld}
 
+# ~~~ Lists, items, paragraphs ~~~
+#+LATEX_HEADER:\usepackage{enumitem}
+#+LATEX_HEADER:\setlist[itemize]{noitemsep}
+#+LATEX_HEADER:\setlength{\topskip}{0mm}
+#+LATEX_HEADER:\setlength{\parindent}{0mm}
 
+# ~~~ No Page numbers ~~~
+#+LATEX_HEADER:\pagenumbering{gobble}
+
+# --#+LATEX_HEADER:\setlength{\voffset}{-0.75in}
+# --#+LATEX_HEADER:\setlength{\headsep}{5pt}
 
 

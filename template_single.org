@@ -2,14 +2,14 @@
 #+OPTIONS: toc:nil num:nil tasks:nil h:nil title:t H:3 email:nil d:nil
 
 #+LATEX_CLASS: article
-#+LATEX_CLASS_OPTIONS: [11pt]
+#+LATEX_CLASS_OPTIONS: [10pt]
 #+LATEX_HEADER: \usepackage[innermargin=1.1in,outermargin=1.1in,vmargin=3cm]{geometry}
 
 #+LATEX_HEADER: \usepackage[T1]{fontenc}
 #+LATEX_HEADER: \usepackage[sc,osf]{mathpazo}
 
 #+LATEX_HEADER: \usepackage{setspace}
-#+LATEX_HEADER: \doublespacing
+#+LATEX_HEADER: \singlespacing
 
 #+LATEX_HEADER: \usepackage{titling}
 #+LATEX_HEADER: \setlength{\droptitle}{-8em} 

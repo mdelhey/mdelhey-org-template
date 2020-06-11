@@ -42,7 +42,7 @@
 #+LATEX_HEADER: \usepackage{newtxtext,newtxmath}
 
 # --- Minimal Title ---
-#+LATEX_HEADER: \makeatletter\renewcommand{\maketitle}{\bgroup\setlength{\parindent}{0pt}\begin{flushleft}\textbf{\@title}\linebreak\textit{\@author}\end{flushleft}\egroup\vspace{-2ex}}\makeatother
+#+LATEX_HEADER: \makeatletter\renewcommand{\maketitle}{\bgroup\setlength{\parindent}{0pt}\begin{flushleft}\textbf{\@title}\linebreak\textit{\@author}\linebreak{\@date}\end{flushleft}\egroup}\makeatother
 
 # --- Disable Word-Wrap ---
 #+LATEX_HEADER: \usepackage[none]{hyphenat}

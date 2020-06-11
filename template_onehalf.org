@@ -2,14 +2,15 @@
 #+OPTIONS: toc:nil num:nil tasks:nil h:nil title:t H:3 email:nil d:nil
 
 #+LATEX_CLASS: article
-#+LATEX_CLASS_OPTIONS: [11pt]
+#+LATEX_CLASS_OPTIONS: [12pt]
 #+LATEX_HEADER: \usepackage[innermargin=1.1in,outermargin=1.1in,vmargin=3cm]{geometry}
 
 #+LATEX_HEADER: \usepackage[T1]{fontenc}
 #+LATEX_HEADER: \usepackage[sc,osf]{mathpazo}
 
 #+LATEX_HEADER: \usepackage{setspace}
-#+LATEX_HEADER: \doublespacing
+#+LATEX_HEADER: \onehalfspacing
+#+LATEX_HEADER: \linespread{1.25}
 
 #+LATEX_HEADER: \usepackage{titling}
 #+LATEX_HEADER: \setlength{\droptitle}{-8em} 
@@ -19,7 +20,7 @@
 #+LATEX_HEADER: \newcommand*\Hide{\titleformat{\chapter}[display] {}{}{0pt}{\Huge}\titleformat{\part}{}{}{0pt}{}}
 
 # --- Minimal Title ---
-#+LATEX_HEADER: \makeatletter\renewcommand{\maketitle}{\bgroup\setlength{\parindent}{0pt}\begin{flushleft}\textbf{\@title}\linebreak\textit{\@author}\linebreak{\@date}\end{flushleft}\egroup}\makeatother
+#+LATEX_HEADER: \makeatletter\renewcommand{\maketitle}{\bgroup\setlength{\parindent}{0pt}\begin{flushleft}\textbf{\@title}\linebreak{\@date}\linebreak\textit{\href{mailto:matt.delhey@mail.utoronto.ca}{\@author}}\end{flushleft}\egroup}\makeatother
 
 # --- Section Headings ---
 #+LATEX_HEADER: \usepackage{sectsty}

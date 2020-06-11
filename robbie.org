@@ -1,0 +1,21 @@
+#+EMAIL: matt.delhey@mail.utoronto.ca
+#+OPTIONS: toc:nil num:nil tasks:nil h:nil title:t H:3 email:nil d:nil
+
+# Latex class option
+#+LATEX_CLASS_OPTIONS: [12pt]
+#+LATEX_HEADER: \PassOptionsToPackage{margin=1.5in}{geometry}
+
+# Latex header
+#+LATEX_HEADER: \usepackage{MinionPro}
+# #+LATEX_HEADER: \usepackage{MyriadPro}
+#+LATEX_HEADER: \usepackage[sf]{titlesec}
+#+LATEX_HEADER: \input glyphtounicode
+#+LATEX_HEADER: \pdfgentounicode=1
+
+# #+LATEX_HEADER: \newcommand{\boxright}{%`{=latex}'\mathrel{\mathop\Box}\mathrel{\kern-1.7pt}\rightarrow}
+
+#+LATEX_HEADER: \noindent
+#+LATEX_HEADER: \vspace{-1em}
+#+LATEX_HEADER: \setlength{\parindent}{-1.5em}
+#+LATEX_HEADER: \setlength{\leftskip}{1.5em}
+

@@ -1,0 +1,15 @@
+#+EMAIL: matt.delhey@mail.utoronto.ca
+#+OPTIONS: toc:nil num:nil tasks:nil h:nil title:t H:3 email:nil d:nil
+
+# --- New line macro --- 
+#+MACRO: NEWLINE @@latex:\\@@ @@html:<br>@@ @@ascii:|@@
+
+# --- Square bracket macro ---
+# Square Bracket Open [
+#+MACRO: BO @@latex:\char91@@ @@html:&#91;@@
+# Square Bracket Close ]
+#+MACRO: BC @@latex:\char93@@ @@html:&#93;@@
+
+
+
+

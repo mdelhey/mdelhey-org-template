@@ -1,0 +1,46 @@
+#+INCLUDE: ~/mdelhey-org-template/template_master.org
+
+#+LATEX_CLASS: article
+#+LATEX_CLASS_OPTIONS: [10pt]
+#+LATEX_HEADER: \usepackage[innermargin=1.1in,outermargin=1.1in,vmargin=3cm]{geometry}
+
+#+LATEX_HEADER: \usepackage[T1]{fontenc}
+#+LATEX_HEADER: \usepackage[sc,osf]{mathpazo}
+
+#+LATEX_HEADER: \usepackage{setspace}
+#+LATEX_HEADER: \singlespacing
+
+#+LATEX_HEADER: \usepackage{titling}
+#+LATEX_HEADER: \setlength{\droptitle}{-8em} 
+#+LATEX_HEADER: \posttitle{\par\end{center}}
+
+#+LATEX_HEADER: \usepackage[explicit]{titlesec}
+#+LATEX_HEADER: \newcommand*\Hide{\titleformat{\chapter}[display] {}{}{0pt}{\Huge}\titleformat{\part}{}{}{0pt}{}}
+
+# --- Minimal Title ---
+#+LATEX_HEADER: \makeatletter\renewcommand{\maketitle}{\bgroup\setlength{\parindent}{0pt}\begin{flushleft}\textbf{\@title}\linebreak\textit{\@author}\linebreak{\@date}\end{flushleft}\egroup}\makeatother
+
+# --- Section Headings ---
+#+LATEX_HEADER: \usepackage{sectsty}
+#+LATEX_HEADER: \sectionfont{\normalsize\underline}
+#+LATEX_HEADER: \subsectionfont{\normalsize}
+#+LATEX_HEADER: \subsubsectionfont{\normalsize}
+#+LATEX_HEADER: \usepackage{indentfirst}
+
+# ~~~ BibTeX ~~~
+#+LATEX_HEADER: \let\bibliographyOld\bibliography
+#+LATEX_HEADER: \renewcommand{\bibliography}[1]{\clearpage\nocite{*}\bibliographyOld{#1}}
+#+LATEX_HEADER: \renewcommand{\refname}{Bibliography}
+
+# ~~~ BibLaTeX ~~~
+#+LATEX_HEADER: \usepackage[notes,backend=biber,isbn=false]{biblatex-chicago}
+#+LATEX_HEADER: \DefineBibliographyStrings{english}{references = {Bibliography}}
+#+LATEX_HEADER: \let\printbibliographyOld\printbibliography
+#+LATEX_HEADER: \renewcommand{\printbibliography}{\nocite{*}\clearpage\printbibliographyOld}
+
+# ~~~ Colors ~~~
+#+LATEX_HEADER: \usepackage{xcolor}
+#+MACRO: color @@latex:\textcolor{$1}{$2}@@
+
+# #+MACRO: color @@html:<span style="color: $1">$2</span>@@@@latex:\textcolor{$1}{$2}@@@@odt:<text:span text:style-name="$1">$2</text:span>@@
+

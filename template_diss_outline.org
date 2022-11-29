@@ -1,0 +1,74 @@
+#+INCLUDE: ~/mdelhey-org-template/template_master.org
+
+#+LATEX_CLASS: article
+#+LATEX_CLASS_OPTIONS: [10pt]
+#+LATEX_HEADER: \usepackage[innermargin=1.1in,outermargin=1.1in,vmargin=3cm]{geometry}
+
+#+LATEX_HEADER: \usepackage[T1]{fontenc}
+#+LATEX_HEADER: \usepackage[sc,osf]{mathpazo}
+
+#+LATEX_HEADER: \usepackage{setspace}
+#+LATEX_HEADER: \singlespacing
+
+#+LATEX_HEADER: \usepackage{titling}
+#+LATEX_HEADER: \setlength{\droptitle}{-8em}
+#+LATEX_HEADER: \posttitle{\par\end{center}}
+
+# ~~~ Disable spacing in sections ~~~
+#+LATEX_HEADER: \usepackage[explicit]{titlesec}
+#+LATEX_HEADER: \newcommand*\Hide{\titleformat{\chapter}[display] {}{}{0pt}{\Huge}\titleformat{\part}{}{}{0pt}{}}
+
+# --- Minimal Title ---
+#+LATEX_HEADER: \usepackage[compact]{titlesec}
+#+LATEX_HEADER: \makeatletter\renewcommand{\maketitle}{\bgroup\setlength{\parindent}{0pt}\begin{flushleft}\textbf{\@title}\linebreak\textit{\@author}\linebreak{\@date}\end{flushleft}\egroup}\makeatother
+
+# --- Section Headings ---
+#+LATEX_HEADER: \usepackage{sectsty}
+#+LATEX_HEADER: \sectionfont{\normalsize}
+#+LATEX_HEADER: \subsectionfont{\indent\normalsize\normalfont}
+#+LATEX_HEADER: \subsubsectionfont{\indent\indent\normalsize\normalfont}
+#+LATEX_HEADER: \usepackage{indentfirst}
+
+#+LATEX_HEADER: \setlength{\parskip}{-0.01in}
+#+LATEX_HEADER: \setlength{\parindent}{0.25in}
+
+#+LATEX_HEADER: \titlespacing{\subsection}{0pt}{2in}{2in}
+#+LATEX_HEADER: \titlespacing*{\subsection}{0pt}{2in}{2in}
+
+# #+LATEX_HEADER: \titlespacing*{\subsection}{0pt}{-2in}{-2in}
+# #+LATEX_HEADER: \titlespacing*{\subsection}{0pt}{5.5ex plus 1ex minus .2ex}{4.3ex plus .2ex}
+# #+LATEX_HEADER: \titlespacing*{\subsection}{0pt}{1.1\baselineskip}{\baselineskip}
+# #+LATEX_HEADER: \titlespacing{\section}{0pt}{0in}{-2in}
+# #+LATEX_HEADER: \titlespacing{\subsection}{-2in}{-2in}{-2in}
+# #+LATEX_HEADER: \titlespacing{\subsubsection}{0pt}{0in}{-2in}
+# #+LATEX_HEADER: \titlespacing*{\subsection}{0pt}{*0}{*1.5}
+# #+LATEX_HEADER: \titlespacing{\subsection}{0pt}{\parskip}{-\parskip}
+# #+LATEX_HEADER: \titlespacing\subsection{0pt}{0pt}{0pt}
+# #+LATEX_HEADER: \titlespacing{\subsection}{0pt}{0pt}{0pt}
+
+
+# --- Itemize ---
+#+LATEX_HEADER: \usepackage{enumitem}
+#+LATEX_HEADER: \renewcommand{\labelitemi}{}
+#+LATEX_HEADER: \setlist[itemize]{leftmargin=0.7in, nosep, itemsep=0pt, parsep=0pt, before={\parskip=0pt}, after=\vspace{-\docparskip}}
+
+# #+LATEX_HEADER: \setlist[itemize]{leftmargin=0.7in, topsep=0pt, parsep=0pt, parskip=0pt}
+
+
+# ~~~ Colors ~~~
+#+LATEX_HEADER: \usepackage{xcolor}
+#+MACRO: color @@latex:\textcolor{$1}{$2}@@
+
+# #+MACRO: color @@html:<span style="color: $1">$2</span>@@@@latex:\textcolor{$1}{$2}@@@@odt:<text:span text:style-name="$1">$2</text:span>@@
+
+# ~~~ FIX LINE BREAK problem ~~~
+#+LATEX_HEADER: \let\oldnobreak\nobreak
+#+LATEX_HEADER: \renewcommand{\nobreak}{}
+
+# #+LATEX_HEADER: \let\oldsection\section
+# #+LATEX_HEADER: \let\oldsubsection\subsection
+# #+LATEX_HEADER: \let\oldsubsubsection\subsubsection
+
+# #+LATEX_HEADER: \renewcommand{\section}{\oldsection*}
+# #+LATEX_HEADER: \renewcommand{\subsection}{\oldsubsection*}
+# #+LATEX_HEADER: \renewcommand{\subsubsection}{\oldsubsubsection*}

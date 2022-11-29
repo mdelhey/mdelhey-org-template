@@ -1,0 +1,43 @@
+#+EMAIL: matt.delhey@mail.utoronto.ca
+#+OPTIONS: toc:nil num:nil tasks:nil h:nil title:t H:3 email:nil d:nil
+
+#+LATEX_CLASS: article
+#+LATEX_CLASS_OPTIONS: [11pt]
+#+LATEX_HEADER: \usepackage[innermargin=1.1in,outermargin=1.1in,vmargin=3cm]{geometry}
+
+#+LATEX_HEADER: \usepackage[T1]{fontenc}
+#+LATEX_HEADER: \usepackage[sc,osf]{mathpazo}
+
+#+LATEX_HEADER: \usepackage{setspace}
+#+LATEX_HEADER: \doublespacing
+
+#+LATEX_HEADER: \usepackage{titling}
+#+LATEX_HEADER: \setlength{\droptitle}{-8em} 
+#+LATEX_HEADER: \posttitle{\par\end{center}}
+
+#+LATEX_HEADER: \usepackage[explicit]{titlesec}
+#+LATEX_HEADER: \newcommand*\Hide{\titleformat{\chapter}[display] {}{}{0pt}{\Huge}\titleformat{\part}{}{}{0pt}{}}
+
+# --- Minimal Title ---
+#+LATEX_HEADER: \makeatletter\renewcommand{\maketitle}{\bgroup\setlength{\parindent}{0pt}\begin{flushleft}\textbf{\@title}\linebreak\textit{\@author}\linebreak{\@date}\end{flushleft}\egroup}\makeatother
+
+# --- Section Headings ---
+#+LATEX_HEADER: \usepackage{sectsty}
+#+LATEX_HEADER: \sectionfont{\normalsize}
+#+LATEX_HEADER: \subsectionfont{\normalsize}
+#+LATEX_HEADER: \subsubsectionfont{\normalsize}
+#+LATEX_HEADER: \usepackage{indentfirst}
+
+# Square Bracket Open [
+#+MACRO: BO @@latex:\char91@@ @@html:&#91;@@
+# Square Bracket Close ]
+#+MACRO: BC @@latex:\char93@@ @@html:&#93;@@
+
+# ~~~ Block Quotes ~~~
+#+LATEX_HEADER:\let\quoteOld\quote
+#+LATEX_HEADER:\let\endquoteOld\endquote
+#+LATEX_HEADER:\renewenvironment{quote}{\quoteOld\singlespacing}{\endquoteOld}
+
+
+
+

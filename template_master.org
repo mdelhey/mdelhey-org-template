@@ -1,5 +1,8 @@
 #+EMAIL: matt.delhey@mail.utoronto.ca
-#+OPTIONS: toc:nil num:nil tasks:nil h:nil title:t H:3 email:nil d:nil
+#+OPTIONS: toc:nil num:nil
+# #+OPTIONS: toc:nil num:nil tasks:nil h:nil title:t H:3 email:nil d:nil
+
+# Note: H > 3 breaks LaTex exporting.
 
 # --- New line macro --- 
 #+MACRO: NEWLINE @@latex:\\@@ @@html:<br>@@ @@ascii:|@@

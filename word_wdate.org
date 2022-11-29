@@ -8,7 +8,7 @@
 #+LATEX_HEADER: \usepackage{wordlike}
 #+LATEX_HEADER: \usepackage{setspace}
 #+LATEX_HEADER: \usepackage{ulem}
-#+LATEX_HEADER:	\setstretch{2.0}
+#+LATEX_HEADER: \setstretch{2.0}
 
 # Another way of doing double-spacing
 # #+LATEX_HEADER: \doublespacing 
